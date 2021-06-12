@@ -6,6 +6,8 @@ in the output cell of Google Colab.
 
 Besides, this project can be used as a base for a "playground" component to interactively test language AI models in Colab. 
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/Aivean/colab-react-textarea/blob/main/colab-react-textarea.ipynb)
+
 Licence: MIT
 
 ---
