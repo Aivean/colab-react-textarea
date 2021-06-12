@@ -1,3 +1,21 @@
+Colab React Textarea
+---
+
+This is an example project that shows how to load simple React app (bootstrapped from the `create-react-app`) 
+in the output cell of Google Colab.
+
+Besides, this project can be used as a base for a "playground" component to interactively test language AI models in Colab. 
+
+Licence: MIT
+
+---
+
+
+Below is the original readme of [create-react-app](https://github.com/facebook/create-react-app).
+
+---
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
