@@ -47,11 +47,11 @@ class App extends React.Component {
             <div className="App">
 
                 <TextareaAutosize
-                    style={{ width:"100%" }}
+                    className="colab-textarea"
                     rows={10}
                     onKeyDown={(evt) => {
-                        if (evt.shiftKey && evt.keyCode === 9 ||
-                            evt.ctrlKey && evt.keyCode == 32) {
+                        if (evt.shiftKey && (evt.keyCode === 9 || evt.keyCode === 13) ||
+                            evt.ctrlKey && evt.keyCode === 32) {
 
                             const resultProm = window.google.colab.kernel.invokeFunction(
                                 'notebook.Concat', // The callback name.
@@ -75,7 +75,7 @@ class App extends React.Component {
                             evt.stopPropagation()
                         }
                     }}
-                    disabled ={this.state.loading}
+                    disabled={this.state.loading}
                     value={this.state.value}
                     onChange={e => this.setState({value: e.currentTarget.value})}
                     placeholder="try writing some lines"
